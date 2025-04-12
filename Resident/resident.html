@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Dashboard</title>
+    <link rel="stylesheet" href="resident.css">
+    <script src="resident.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Resident</h2>
+        <ul>
+            <li><a href="../Dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="#">My Complaints</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome, Resident!</h1>
+        <div class="complaints-section">
+            <h2>Your Complaints</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Reply</th>
+                    </tr>
+                </thead>
+                <tbody id="complaintsTable">
+                    <!-- JS fills this -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
