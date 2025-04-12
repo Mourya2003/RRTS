@@ -12,7 +12,7 @@ function handleLogin(event) {
     // Check credentials
     if (email === validEmail && password === validPassword) {
         // Redirect to dashboard.html
-        window.location.href = "../Dashboard/dashboard.html";
+        window.location.href = "../templates/dashboard.html";
     } else {
         alert("Invalid email or password. Please try again.");
     }
