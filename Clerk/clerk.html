@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clerk Dashboard</title>
+  <link rel="stylesheet" href="clerk.css" />
+  <script src="clerk.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Clerk Dashboard</h1>
+
+    <section class="new-complaint">
+      <h2>Upload New Complaint</h2>
+      <form id="newComplaintForm">
+        <input type="text" placeholder="Complaint Title" id="title" required />
+        <textarea placeholder="Complaint Description" id="description" required></textarea>
+        <input type="text" placeholder="Location" id="location" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="edit-complaints">
+      <h2>Edit Existing Complaints</h2>
+      <ul id="complaintList">
+        <!-- Complaints will be loaded here -->
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
